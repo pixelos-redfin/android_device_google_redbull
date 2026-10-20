@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2024 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -31,8 +32,8 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # SELinux
 include device/lineage/sepolicy/libion/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-lineage/dynamic
-BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-lineage/vendor
+BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-custom/dynamic
+BOARD_SEPOLICY_DIRS += device/google/redbull/sepolicy-custom/vendor
 
 # Verified Boot
 ifneq ($(WITH_AVB),true)

@@ -1,14 +1,12 @@
 #
 # Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2024 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    ApertureOverlayRedbull
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -42,10 +40,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
 
 $(call soong_config_set_bool,livedisplay_sdm,enable_dm,false)
-
-# Parts
-PRODUCT_PACKAGES += \
-    GoogleParts
 
 # RCS
 PRODUCT_PACKAGES += \
