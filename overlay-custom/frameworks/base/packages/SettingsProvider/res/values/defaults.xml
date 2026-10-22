@@ -21,4 +21,7 @@
     <integer name="def_screen_brightness">82</integer>
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Default for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
+    <bool name="def_mobile_data_always_on">false</bool>
 </resources>
