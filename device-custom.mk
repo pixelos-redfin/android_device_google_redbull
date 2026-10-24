@@ -8,6 +8,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
 
+# SELinux Treble Labeling tracking list
+PRODUCT_SELINUX_TREBLE_LABELING_TRACKING_LIST_FILE := $(LOCAL_PATH)/sepolicy/tracking_list.yaml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display \
