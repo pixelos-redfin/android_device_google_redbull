@@ -28,17 +28,17 @@ on early-init
     # configure governor settings
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 2000
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 10000
 
     # configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 5000
+    write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 10000
 
     # configure governor settings for big big CPU
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 5000
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 10000
 
 # Disable VDSO on JAWS boards.
 on early-init && property:ro.revision="DEV1.0"
