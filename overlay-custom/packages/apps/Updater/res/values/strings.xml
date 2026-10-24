@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2026 PixelOS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Placeholders: {branch} is net.pixelos.version; {device} is ro.custom.device. -->
+    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/pixelos-redfin/pixelos-ota/{branch}/API/updater/{device}.json</string>
+    <string name="changelog_url" translatable="false">https://raw.githubusercontent.com/pixelos-redfin/pixelos-ota/{branch}/API/updater/changelogs/{device}.md</string>
+</resources>
