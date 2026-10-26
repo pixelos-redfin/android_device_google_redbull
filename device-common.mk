@@ -105,8 +105,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.hardware.diag.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
 
 # Extended VoLTE/VoWiFi/5G carrier MBN configurations
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/mbn/mcfg_sw,$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw)
+$(call inherit-product, vendor/google/redbull-mbns/redbull-mbns-vendor.mk)
 
 # A/B support
 PRODUCT_PACKAGES += \
