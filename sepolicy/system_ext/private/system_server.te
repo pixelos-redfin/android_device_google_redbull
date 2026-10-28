@@ -1,0 +1,5 @@
+# AttestationService builds the certified props URL from net.pixelos.version
+get_prop(system_server, custom_version_prop)
+
+# AttestationService reads persist.sys.pihooks.disable.gms_props
+get_prop(system_server, pih_disable_prop)
