@@ -1,2 +1,5 @@
 # allow systemui to set boot animation colors
 set_prop(platform_app, bootanim_system_prop);
+
+# SystemUI reads the Bluetooth finder flag
+get_prop(platform_app, bluetooth_finder_prop);
