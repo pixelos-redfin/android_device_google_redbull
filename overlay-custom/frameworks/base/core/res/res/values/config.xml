@@ -77,4 +77,8 @@
          * The device must be provisioned with HDCP keys (for protected content).
     -->
     <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Keep Play Store on the real device so it serves apps built for redbull
+         (a spoofed Pixel got a Google Camera that crashes here) -->
+    <bool name="config_spoofVendingBuild">false</bool>
 </resources>
